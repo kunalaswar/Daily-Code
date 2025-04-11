@@ -15,3 +15,13 @@
 # res = s.lengthOfLastWord("Hello World")
 # print(res)
 
+
+# import typing import List 
+# def length_of_last_word(s: str) -> int:
+#     s = s.strip()            # Remove any trailing or leading spaces
+#     words = s.split()        # Split the string into a list of words
+#     return len(words[-1])    # Return the length of the last word
+
+# s = "Hello World"
+# print(length_of_last_word(s))
+
