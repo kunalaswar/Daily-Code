@@ -1,16 +1,23 @@
-🔥 Daily DSA Practice – LeetCode & GFG
+# 🔥 Daily DSA Practice – LeetCode & GFG
 
-I upload my daily coding solutions from LeetCode and GeeksforGeeks to stay consistent and improve my problem-solving skills. My goal is to be in the top 1% of programmers. 🚀
+I upload my **daily coding solutions** from **LeetCode** and **GeeksforGeeks** to stay consistent and improve my problem-solving skills. My goal is to be in the **top 1% of programmers.** 🚀
 
-📌 What's in this repo?
+---
 
-✅ Daily coding solutions
-✅ Written in Python (might use other languages sometimes)
+### 📌 What's in this repo?
 
-🎯 Why This Repo?
+✅ Daily coding solutions  
+✅ Written in **Python** (might use other languages sometimes)
 
-This helps me track my progress and stay motivated. Feel free to check out the solutions, suggest improvements, or discuss problems!
+---
 
-🔗 Connect With Me
+### 🎯 Why This Repo?
 
-Let's grow together! 🚀   
+This helps me track my progress and stay motivated.  
+Feel free to check out the solutions, suggest improvements, or discuss problems!
+
+---
+
+### 🔗 Connect With Me
+
+Let's grow together! 🚀
