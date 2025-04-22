@@ -1,6 +1,7 @@
 
 # Value equal to index value
-#Given an array arr. Your task is to find the elements whose value is equal to that of its index value ( Consider 1-based indexing ).
+# Given an array arr. Your task is to find the elements whose value is equal to 
+# that of its index value ( Consider 1-based indexing ).
 
 # class Solution:
 #     def valueEqualToIndex(self, arr):
