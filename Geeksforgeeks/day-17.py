@@ -28,3 +28,6 @@
 # arr = [15, 2, 45, 4 , 7]       
 # print(valueEqualToIndex(arr))
 
+
+
+
