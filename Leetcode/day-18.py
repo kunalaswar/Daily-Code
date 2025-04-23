@@ -38,20 +38,22 @@
 
 
 #* OR
-def moveZeros(nums):
-    number_zeros = 0
-    for i in range(len(nums)):
-        if nums[i]!=0:
-            nums[number_zeros] =nums[i]
-            number_zeros = number_zeros+1
-    for i in range(number_zeros,len(nums)):
-        nums[i] = 0
-    return nums
+# def moveZeros(nums):
+#     number_zeros = 0
+#     for i in range(len(nums)):
+#         if nums[i]!=0:
+#             nums[number_zeros] =nums[i]
+#             number_zeros = number_zeros+1
+#     for i in range(number_zeros,len(nums)):
+#         nums[i] = 0
+#     return nums
 
-nums =  [int(i) for i in input("Enter List Of Values : ").split()]
-res = moveZeros(nums)
-print(res)
+# nums =  [int(i) for i in input("Enter List Of Values : ").split()]
+# res = moveZeros(nums)
+# print(res)
 
+# def moveZeros():
+#     pass
 
 
 
