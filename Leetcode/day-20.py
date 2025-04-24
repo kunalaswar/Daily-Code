@@ -15,4 +15,5 @@
 # res = s.intersection( [1,2,2,1], [2,2])
 # print(res)
 
+# OR
 
