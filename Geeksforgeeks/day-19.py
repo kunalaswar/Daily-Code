@@ -1,5 +1,5 @@
 
-# # Rotating an Array
+# Rotating an Array
 
 # class Solution:
 #     def leftRotate(self, arr, d):
@@ -15,3 +15,7 @@
 # s = Solution()    
 # res = s.leftRotate([-1, -2, -3, 4, 5, 6, 7],2)
 # print(res)
+
+# OR
+
+
