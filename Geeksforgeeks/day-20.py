@@ -33,7 +33,6 @@ print(",".join(map(str,output)))
 
 
 
-# num= 123,56
-# sum of digits = 6
+
 
 
