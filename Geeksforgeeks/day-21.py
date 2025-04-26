@@ -13,4 +13,16 @@
 # res = s.findElementAtIndex(2,arr)
 # print(res)
 
+#* OR
 
+def findElementAtIndex(arr,key):
+    a = len(arr)
+    i = 0
+    while(a>=i):   
+        if a == key :
+            return arr[a]
+        a = a-1
+
+arr  = [10, 20, 30, 40, 50]      
+res = findElementAtIndex(arr,2)
+print(res)        
