@@ -14,12 +14,13 @@
 
 # OR
 
-def maxProduct(arr):
-    arr.sort(reverse = True)
-    return arr[0] * arr[1]
+# def maxProduct(arr):
+#     arr.sort(reverse = True)
+#     return arr[0] * arr[1]
 
-arr = [1, 4, 3, 6, 7, 0] 
-print(maxProduct(arr))		   
+# arr = [1, 4, 3, 6, 7, 0] 
+# print(maxProduct(arr))		   
 	            
-arr= [1, 100, 42, 4, 23]
-print(maxProduct(arr))		   
+# arr= [1, 100, 42, 4, 23]
+# print(maxProduct(arr))		   
+
