@@ -1,5 +1,5 @@
-
 # 121. Best Time to Buy and Sell Stock
+
 def containsNearbyDuplicate(nums, k):
     seen = {}  # Dictionary to store number and its last seen index
 
