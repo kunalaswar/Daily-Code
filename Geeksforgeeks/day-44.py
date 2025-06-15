@@ -12,3 +12,4 @@ def countPairs(arr1, arr2, x):
         
 print(countPairs([1, 3, 5, 7], [2, 3, 5, 8], 10))  # Output: 2
 print(countPairs([1, 2, 3, 4], [5, 6, 7, 8], 5))   # Output: 0
+
