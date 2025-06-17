@@ -1,4 +1,5 @@
- # 1431. Kids With the Greatest Number of Candies
+ 
+# 1431. Kids With the Greatest Number of Candies
 
 # class Solution:
 #     def kidsWithCandies(self, candies, extraCandies):
@@ -24,7 +25,7 @@
 # print(res2)
 
 
-# OR 
+# OR  Using list compersion 
 
 class Solution:
     def kidsWithCandies(self, candies, extraCandies):
@@ -36,6 +37,7 @@ class Solution:
 s = Solution()        
 res = s.kidsWithCandies([2,3,5,1,3],3)
 print(res)
+
 
 
 
