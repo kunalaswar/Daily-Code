@@ -1,5 +1,6 @@
 
 # 412. Fizz Buzz
+
 class Solution:
     def fizzBuzz(self, n):
         lst = []
@@ -21,3 +22,4 @@ s = Solution()
 print(s.fizzBuzz(3))
 print(s.fizzBuzz(5))
 print(s.fizzBuzz(15))
+
