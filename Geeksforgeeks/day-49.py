@@ -22,3 +22,4 @@ class Solution:
 s = Solution()
 print(s.findMaxProduct([1, 2, 3, 4], 2))   # Output: 12
 print(s.findMaxProduct([1, 6, 7, 8], 3))   # Output: 336
+
