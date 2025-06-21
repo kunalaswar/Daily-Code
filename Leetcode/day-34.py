@@ -17,5 +17,5 @@ class Solution:
 s = Solution()    
 print(s.countDigits(7))
 print(s.countDigits(121))
-print(s.countDigits(1248))
+# print(s.countDigits(1248))
 
