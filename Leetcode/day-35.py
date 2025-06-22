@@ -14,4 +14,5 @@ class Solution:
         return mul-sum 
 s = Solution()    
 print(s.subtractProductAndSum(234))
+
 print(s.subtractProductAndSum(4421))
