@@ -1,7 +1,6 @@
  
 #  Most Frequent Character
 
-
 class Solution:
     #Function to find the maximum occurring character in a string.
     def getMaxOccurringChar(self, s):
