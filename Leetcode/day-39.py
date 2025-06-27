@@ -2,7 +2,7 @@
 # 231. Power of Two
 
 class Solution:
-    def isPowerOfTwo(self, n: int) -> bool:
+    def isPowerOfTwo(self, n):
             
         # base case
         if n<=0:
@@ -16,8 +16,10 @@ class Solution:
         
 s = Solution()
 print(s.isPowerOfTwo(1))
+
 print(s.isPowerOfTwo(16))
-print(s.isPowerOfTwo(3  ))
+
+print(s.isPowerOfTwo(3))
 
 
         
