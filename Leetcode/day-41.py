@@ -14,7 +14,6 @@ class Solution:
 
         return max_count
 
-
 s = Solution()
 print(s.findMaxConsecutiveOnes([1,1,0,1,1,1]))
 
