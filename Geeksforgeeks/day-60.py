@@ -1,3 +1,5 @@
+
+# Binary Search 
 class Solution:
     def binarysearch(self, arr, k):
         left = 0
