@@ -3,7 +3,7 @@
 
 class Solution:   
     def peakElement(self,arr):
-        # Code here
+        
         left = 0
         right = len(arr)-1
         while(left < right):

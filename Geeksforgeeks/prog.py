@@ -42,3 +42,5 @@ sol = Solution()
 
 length = sol.getCount(llist.head)
 print("Length of linked list:", length)
+
+
