@@ -21,8 +21,8 @@ class solution:
                 missing = i
 
         return [duplicate, missing]
-# Usage
+
 s = solution()
-print(s.find_error_nums([1, 2, 2, 4]))  # Output: [2, 3]
+print(s.find_error_nums([1, 2, 2, 4])) 
 
 print(s.find_error_nums([1,1]))
