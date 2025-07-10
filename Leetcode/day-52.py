@@ -1,5 +1,5 @@
 
-# 
+# 53. Maximum Subarray
 
 class Solution:
     def maxSubArray(self, nums):
@@ -7,6 +7,8 @@ class Solution:
         max_sum = nums[0]
         for i in range(len(nums)):
             curr_sum += nums[i]
+        # print(curr_sum)
+        # print("-------")
             if curr_sum > max_sum :
                 max_sum = curr_sum
             if curr_sum < 0:
