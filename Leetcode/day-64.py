@@ -7,10 +7,8 @@ class Solution:
         
         result = []
 
-        for num in nums1:
-        
-            index_in_nums2 = nums2.index(num)
-        
+        for num in nums1:        
+            index_in_nums2 = nums2.index(num)       
         
             found = -1
             for i in range(index_in_nums2 + 1, len(nums2)):
