@@ -14,9 +14,7 @@ class Solution:
             for i in range(index_in_nums2 + 1, len(nums2)):
                 if nums2[i] > num:
                     found = nums2[i]
-                    break
-        
-        
+                    break       
             result.append(found)
 
         return result
