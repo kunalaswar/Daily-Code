@@ -25,7 +25,6 @@ class Solution:
 
         return 0
 
-
 s = Solution()
 print(s.findKRotation([5, 1, 2, 3, 4]))
 
