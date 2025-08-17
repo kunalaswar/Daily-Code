@@ -4,7 +4,7 @@
 class Solution:
     def shortestCompletingWord(self, licensePlate, words):
             
-        
+          # Step 1: Get letters from licensePlate in lowercase
         required = {}
         for ch in licensePlate.lower():
             if ch.isalpha():
@@ -12,7 +12,7 @@ class Solution:
 
         best_word = None
 
-        
+          # Step 2: Check each word
         for word in words:
             word_lower = word.lower()
             match = True
@@ -21,7 +21,7 @@ class Solution:
                     match = False
                     break
             
-        
+             # Step 3: Keep the shortest valid word
             if match:
                 if best_word is None or len(word) < len(best_word):
                     best_word = word
