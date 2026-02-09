@@ -1,5 +1,8 @@
 #
-lst = [1,2,3,4,5,6] 
-for i in lst:
-    print(i,end=" ")
+# lst = [1,2,3,4,5,6] 
+# for i in lst:
+#     print(i,end=" ")
 
+
+a = "2+3j"
+print(a)
