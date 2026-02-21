@@ -5,12 +5,20 @@
 # Example:
 # ["h","e","l","l","o"] → ["o","l","l","e","h"]
 
-s = ["h","e","l","l","o"]
-# print(s[::-1])
-for i  in range(len(s)):
-    print(s[i])
-lst = [val for val in s]    
-print(lst)
+# s = ["h","e","l","l","o"]
+# # print(s[::-1])
+
+# left = 0 
+# right = len(s)-1
+# while(left < right):
+#     s[left],s[right] = s[right] ,s[left ]
+#     left += 1 
+#     right -= 1
+# print(s)
+
+# -----------------------------------------------------------
+
+    
 
 
 
