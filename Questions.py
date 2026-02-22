@@ -51,44 +51,64 @@
 # Example:
 # "leetcode" → 0
 
-s = "leetcode"   
+# s = "leetcode"   
+# count  = {}
+# for ch in s:
+#     if ch in count:
+#         count[ch] += 1   
+#     else:
+#         count[ch] = 1
 
-count  = {}
-for ch in s:
-    if ch in count:
-        count[ch] += 1   
-    else:
-        count[ch] = 1
+# # find first non -repeating 
+# for i in range(len(s)):
+#     if count[s[i]] ==1 :
+#         print(i) 
+#         break
 
-# find first non -repeating 
-for i in range(len(s)):
-    if count[s[i]] ==1 :
-        print(i) 
-        break
+# ----------------------------------------------------------
+#! 4. First Non-Repeating Character
+# Return the first non-repeating character in the string.
+# If none exists, return None.
+# Example:
+# "swiss" → "w"
 
+# s = "swiss"
+# count  = {}
+# for ch in s:
+#     # print(ch)
+#     if ch in count:
+#         count[ch] +=1
+#     else:
+#         count[ch] = 1
+# # print(count)   
+# for i in range(len(s)):
+#     if count[s[i]]==1:
+#         print(i)
+#         break
 
+# =============================================================
+#! 4. Contains Duplicate
+# Return True if any value appears at least twice in the list.
+# If every element is unique, return False.
+# Example:
+# [1,2,3,1] → True
 
+# nums = [1,2,3,1]
+# count = {}
+# for i in nums:
+#     if i in count:
+#         count[i] +=1 
+#     else:
+#         count[i] = 1 
+# print(count)        
 
-
-# def first_unique_char(s):
-
-#     # Step 1: Count frequency
-#     count = {}
-
-#     for ch in s:
-#         count[ch] = count.get(ch, 0) + 1
-
-#     # Step 2: Find first non-repeating
-#     for i in range(len(s)):
-#         if count[s[i]] == 1:
-#             return i
-
-#     return -1
-
-    
-
-
-
+# for val in count:
+#     if count[val]==2:
+#         print(True)
+#         break
+#     else:
+#         print(False)    
+#         break
 
 
 
