@@ -109,7 +109,29 @@
 #     else:
 #         print(False)    
 #         break
+# =============================================================
 
+#! 5. Move Zeroes
+# Given a list of integers nums, move all 0's to the end
+# while maintaining the relative order of non-zero elements.
+# Do not create a new list.
+# Modify the list in-place.
+# Example:
+# [0,1,0,3,12] → [1,3,12,0,0]
+
+nums = [0,1,0,3,12]    
+pos = 0 # 1 
+for i  in range(len(nums)): # [1,1,0,3,12]
+    if nums[i] != 0:
+        nums[pos] = nums[i]
+        pos  += 1
+    print(nums)
+for i in range(pos,len(nums)):
+    nums[i] = 0
+
+print(nums)    
+
+        
 
 
 
