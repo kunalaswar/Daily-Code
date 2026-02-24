@@ -120,18 +120,105 @@
 # [0,1,0,3,12] → [1,3,12,0,0]
 
 nums = [0,1,0,3,12]    
-pos = 0 # 1 
-for i  in range(len(nums)): # [1,1,0,3,12]
-    if nums[i] != 0:
-        nums[pos] = nums[i]
-        pos  += 1
-    print(nums)
-for i in range(pos,len(nums)):
-    nums[i] = 0
+# pos = 0 # 1 
+# for i  in range(len(nums)): # [1,1,0,3,12]
+#     if nums[i] != 0:
+#         nums[pos] = nums[i]
+#         pos  += 1
+#     print(nums)
+# for i in range(pos,len(nums)):
+#     nums[i] = 0
+# print(nums)    
 
-print(nums)    
+#! method 2 
+# temp = []
+# for i in range(0,len(nums)):
+#     if nums[i]!=0:
+#         temp.append(nums[i])
+# # nz= len(temp)        
+# for i in range(0,len(temp)):
+#     nums[i] = temp[i]
 
+# for i in range(len(temp),len(nums)):
+#     nums[i]=0
+
+# print(nums)
+
+#! method 3
+# nums = [0,1,0,3,12]    
+# i =0
+# while(i<len(nums)):
+#     if nums[i]==0:
+#         break
+#     i = i+1 
+# if i==len(nums): 
+#     pass # return 
+# j = i+1 
+# while(j<len(nums)):
+#     if nums[j]!=0:
+#         nums[i],nums[j] = nums[j],nums[i]
+#         i = i+1
+#     j = j+1     
+# print(nums)
+
+
+#! 4. Valid Anagram
+# Return True if one string is an anagram of another.
+# Example:
+# "anagram", "nagaram" → True
+
+# s = "anagram"
+# t = "nagaram"
+# count1 = {}
+# count2 = {}
+# for i in range(len(s)):
+#     if s[i] not in count1:
+#         count1[s[i]] = 1
+#     else:
+#         count1[s[i]] += 1
+# print(count1)        
+# for i in range(len(t)):
+#     if t[i] not in count2:
+#         count2[t[i]] = 1
+#     else:
+#         count2[t[i]] += 1
+# print(count2)        
+
+# if count1 != count2: # Order does NOT matter in dictionary comparison.
+#     print(False)
+
+# else:
+#     print(True)    
         
+#! method 2
+# s = "anagram"
+# t = "nagaram"
+# count1 = {}
+# count2 = {}
+# if len(s)!=len(t):
+#     print(False)
+
+# else:
+#     count = {}
+    
+#     for ch in s:
+#         count[ch] = count.get(ch,0) + 1
+
+# # print(count)
+#     for ch in t:
+#         if ch not in count:
+#             print(False)
+#             break
+#         count[ch] -=1
+#         if count[ch] < 0:
+#             print(False)
+#             break
+    
+#     else:
+#         print(True)
+
+#===============================================================
+
 
 
 
