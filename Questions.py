@@ -218,6 +218,48 @@ nums = [0,1,0,3,12]
 #         print(True)
 
 #===============================================================
+#! 5. Longest Common Prefix
+# Find the longest common prefix among an array of strings.
+# Example:
+# ["flower","flow","flight"] → "fl"
+
+# def longest_common_prefix(strs):
+#     if not strs:
+#         return ""
+
+#     prefix = ""
+#     for i in range(len(strs[0])):
+#         char = strs[0][i]
+#         for word in strs[1:]:
+#             if i >= len(word) or word[i] != char:
+#                 return prefix
+#         prefix += char
+#     return prefix
+
+# print(longest_common_prefix(["flower", "flow", "flight"]))
+
+strs = ["flower","flow","flight"]
+prefix = strs[0]
+# print(prefix)
+for s in strs[1:]:
+    # print(s)
+    while not s.startswith(prefix):
+        prefix = prefix[:-1] # reduce the lenght 
+        if not prefix:
+            break
+print(prefix)        
+
+        
+
+
+
+
+
+
+
+
+ 
+
 
 
 
