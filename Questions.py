@@ -249,7 +249,6 @@ for s in strs[1:]:
             break
 print(prefix)        
 
-#! 6.
 
         
 
