@@ -238,16 +238,16 @@ nums = [0,1,0,3,12]
 
 # print(longest_common_prefix(["flower", "flow", "flight"]))
 
-strs = ["flower","flow","flight"]
-prefix = strs[0]
-# print(prefix)
-for s in strs[1:]:
-    # print(s)
-    while not s.startswith(prefix):
-        prefix = prefix[:-1] # reduce the lenght 
-        if not prefix:
-            break
-print(prefix)        
+# strs = ["flower","flow","flight"]
+# prefix = strs[0]
+# # print(prefix)
+# for s in strs[1:]:
+#     # print(s)
+#     while not s.startswith(prefix):
+#         prefix = prefix[:-1] # reduce the lenght 
+#         if not prefix:
+#             break
+# print(prefix)        
 
 
         
