@@ -10,12 +10,18 @@ def missingNum( arr):
             return i
     return len(arr) + 1
 
+print(missingNum( arr=[1, 2, 3, 5]))
+print(missingNum( arr=[8, 2, 4, 5, 3, 7, 1]))
+print(missingNum( arr= [1]))
 
+# OR
 
+def missingNum( arr):
+    n = len(arr) + 1
+    total = n * (n + 1) // 2
+    return total - sum(arr)
 
 print(missingNum( arr=[1, 2, 3, 5]))
 print(missingNum( arr=[8, 2, 4, 5, 3, 7, 1]))
 print(missingNum( arr= [1]))
 
-
-        
