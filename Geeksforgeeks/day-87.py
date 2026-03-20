@@ -32,7 +32,7 @@ class Solution:
     def getPairs(self, arr):
         seen = set()
         result = set()
-
+        
         for num in arr:
             if -num in seen:
                 if num < -num:
