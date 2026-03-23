@@ -14,30 +14,31 @@
 # Output: false 
 # Explanation: The characters in the two strings are not the same — some are missing or extra. So, they are not anagrams.
 
-# class Solution:
-#     def areAnagrams(self, s1, s2):
-#        dict1 ={}
-#        dict2 = {}
-#        if len(s1)!=len(s2):
-#            return False
-#        for i in s1:
-#            if i not in dict1:
-#                dict1[i] = 1
-#            else:
-#                dict1[i] += 1                   
-#        for i in s2:           
-#            if i not in dict2:
-#                 dict2[i] = 1
-#            else:
-#                dict2[i] += 1 
+class Solution:
+    def areAnagrams(self, s1, s2):
+       dict1 ={}
+       dict2 = {}
+       if len(s1)!=len(s2):
+           return False
+       for i in s1:
+           if i not in dict1:
+               dict1[i] = 1
+           else:
+               dict1[i] += 1                   
+       for i in s2:           
+           if i not in dict2:
+                dict2[i] = 1
+           else:
+               dict2[i] += 1 
 
-#        return dict1 == dict2
+       return dict1 == dict2
                  
-# s = Solution()       
-# print(s.areAnagrams("geeks","kseeg"))
-# print(s.areAnagrams("allergy", "allergyy"))
-# print(s.areAnagrams("listen","lists" ))
+s = Solution()       
+print(s.areAnagrams("geeks","kseeg"))
+print(s.areAnagrams("allergy", "allergyy"))
+print(s.areAnagrams("listen","lists" ))
 
+#! OR
 
 class Solution:
     def areAnagrams(self,s1, s2):
@@ -47,17 +48,17 @@ class Solution:
 
         freq = {}
 
-        # count from s1
+       
         for ch in s1:
             freq[ch] = freq.get(ch, 0) + 1
 
-        # subtract using s2
+        # subtract from s2
         for ch in s2:
             if ch not in freq:
                 return False
             freq[ch] -= 1
 
-        # check all values are zero
+        
         for val in freq:
             if freq[val] != 0:
                 return False
