@@ -14,13 +14,7 @@
 
 
 
-# def twoSum( arr, target):
-#     dict1 = {}
-#     for i in range(len(arr)):
-#         # print(i)
-#         if arr[i] not in dict1:
-#             dict1[i] = i
-        
+
 def twoSum(arr, target):
     seen = {}
 
@@ -36,8 +30,6 @@ def twoSum(arr, target):
     return None
 
         
-
-
 s = twoSum([0, -1, 2, -3, 1], target = -2)
 print(s)
 
