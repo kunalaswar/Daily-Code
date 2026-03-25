@@ -22,7 +22,6 @@
 # lst = [1,2,3,4,1]
 # print(len(lst)!=len(set(lst)))
 
-
 lst = [1,2,3,1]
 seen  =set()
 for i in lst:
@@ -32,7 +31,7 @@ for i in lst:
     seen.add(i)
 else:
     print(False)    
-
+    
       
 
 
