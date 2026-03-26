@@ -250,7 +250,25 @@ nums = [0,1,0,3,12]
 # print(prefix)        
 
 
-        
+#===============================================================
+#! 5. Best time to buy and sell the stock 
+# Return maximun profit from one buy and one sell
+
+lst = [7,1,5,3,6,4]
+min_price = lst[0]
+max_profit = 0     
+
+for i in lst:
+    if i < min_price:
+        min_price = i # 1
+# print(min_price)      
+    profit = i-min_price 
+    # print(profit)  
+    if profit > max_profit:
+        max_profit = profit
+
+print("profit : ",max_profit)         
+
 
 
 
