@@ -258,16 +258,16 @@ lst = [7,1,5,3,6,4]
 min_price = lst[0]
 max_profit = 0     
 
-# for i in lst:
-#     if i < min_price:
-#         min_price = i # 1
+for i in lst:
+    if i < min_price:
+        min_price = i # 1
 # # print(min_price)      
-#     profit = i-min_price 
-#     # print(profit)  
-#     if profit > max_profit:
-#         max_profit = profit
+    profit = i-min_price 
+    # print(profit)  
+    if profit > max_profit:
+        max_profit = profit
 
-# print("profit : ",max_profit)         
+print("profit : ",max_profit)         
 
 
 
