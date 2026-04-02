@@ -274,29 +274,56 @@ nums = [0,1,0,3,12]
 #! 7. merge sorted array 
 #  Marge two sorted arrays into one sorted array in place 
 
-a = [1,2,3,0,0,0]
-b = [2,5,6]
+# a = [1,2,3,0,0,0]
+# b = [2,5,6]
 
-m = 3
-n = 3
-i = m-1
-j = n-1
-k = m + n - 1
-while(i>=0 and j>=0):
-    if a[i]>b[j]:
-        a[k] = a[i]
-        i = i-1
-    else:
-        a[k]=b[j]
-        j = j-1
-    k = k - 1 
+# m = 3
+# n = 3
+# i = m-1
+# j = n-1
+# k = m + n - 1
+# while(i>=0 and j>=0):
+#     if a[i]>b[j]:
+#         a[k] = a[i]
+#         i = i-1
+#     else:
+#         a[k]=b[j]
+#         j = j-1
+#     k = k - 1 
 
-while(j>=0):
-    a[k] = b[j]
-    j = j-1
-    k = k-1
-print(a)   
+# while(j>=0):
+#     a[k] = b[j]
+#     j = j-1
+#     k = k-1
+# print(a)   
+
  
+#===============================================================
+#! 8. majority element 
+# find the element that appear more than n/2 times 
+
+# lst = [3,2,3]
+# count = {}
+# for i in lst:
+#     if i not in count:
+#         count[i] = 1
+#     else:
+#         count[i] += 1 
+# # print(count)        
+# for val in count:
+#     if count[val] > 3:
+#         print(val)
+
+
+# boyers more voting 
+lst = [3,2,3]
+candidate = None
+count = 0
+for num in lst:
+    if count ==0:
+        candidate = num 
+    count +=1 if num == candidate  else -1 
+print(candidate)
 
 
 
