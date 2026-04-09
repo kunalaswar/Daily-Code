@@ -316,14 +316,14 @@ nums = [0,1,0,3,12]
 
 
 # boyers more voting 
-# lst = [3,2,3]
-# candidate = None
-# count = 0
-# for num in lst:
-#     if count ==0:
-#         candidate = num 
-#     count +=1 if num == candidate  else -1 
-# print(candidate)
+lst = [3,2,3]
+candidate = None
+count = 0
+for num in lst:
+    if count ==0:
+        candidate = num 
+    count +=1 if num == candidate  else -1 
+print(candidate)
 
 
 
