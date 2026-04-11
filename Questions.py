@@ -326,7 +326,7 @@ nums = [0,1,0,3,12]
 # print(candidate)
 
 #===============================================================
-#! 9. Intersection of two Arraya
+#! 9. Intersection of two Array 
 # Return the intersection of two arrays continue elements 
 # Eaxmples
 
@@ -339,15 +339,34 @@ nums = [0,1,0,3,12]
 # print(common_element)   
 
 # 
-lst1 = [1,2,2,1]
-lst2 = [2,2]
-set2 = set(lst2)
-common_element = set()
-for i in lst1:
-    if i in set2:
-        common_element.add(i)
-print(common_element)        
+# lst1 = [1,2,2,1]
+# lst2 = [2,2]
+# set2 = set(lst2)
+# common_element = set()
+# for i in lst1:
+#     if i in set2:
+#         common_element.add(i)
+# print(common_element)        
 
+
+#===============================================================
+#! 10.Top k Frequent Elements 
+# Return  the k most frequent elements 
+# Example :
+
+nums = [1,1,1,2,2,3]
+k = 2 
+dict1 = {}
+for i in nums:
+    if i not in dict1:
+        dict1[i] = 1 
+    else:
+        dict1[i] += 1 
+# print(dict1)  
+sorted_item = sorted(dict1.items(),  key=lambda x : x[1], reverse = True)
+
+result = [key for key in sorted_item[:k]]   
+print(result) 
 
 
 
