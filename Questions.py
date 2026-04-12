@@ -354,19 +354,59 @@ nums = [0,1,0,3,12]
 # Return  the k most frequent elements 
 # Example :
 
-nums = [1,1,1,2,2,3]
-k = 2 
-dict1 = {}
-for i in nums:
-    if i not in dict1:
-        dict1[i] = 1 
-    else:
-        dict1[i] += 1 
-# print(dict1)  
-sorted_item = sorted(dict1.items(),  key=lambda x : x[1], reverse = True)
+# nums = [1,1,1,2,2,3]
+# k = 2 
+# dict1 = {}
+# for i in nums:
+#     if i not in dict1:
+#         dict1[i] = 1 
+#     else:
+#         dict1[i] += 1 
+# # print(dict1)  
+# sorted_item = sorted(dict1.items(),  key=lambda x : x[1], reverse = True)
 
-result = [key for key in sorted_item[:k]]   
-print(result) 
+# result = [key for key in sorted_item[:k]]   
+# print(result) 
+        
+#===============================================================
+# stack
+#! 11. valid paranthesis
+# check if paranthesis are valid 
+# Example :
+# "(),[],{}" = True
+
+# def isvalid(s):
+        
+#     stack = []
+#     pairs = {')':'(', ']':'[', '}':'{'} 
+#     for ch in s:
+#         if ch in pairs.values():
+#             stack.append(ch)
+#         else:
+#             if not stack:
+#                 return  False
+#             if stack[-1] !=pairs[ch]:
+#                 return False
+#             stack.pop()
+#     return len(stack)== 0 
+# print(isvalid("()[]{}"))
+
+#
+def isvalid(s):
+    stack = []
+    closetoopen = {')':'(', ']':'[', '}':'{'} 
+    for ch in s:
+        if ch in closetoopen:
+            if not stack or stack[-1] != closetoopen[ch]:
+                return False
+            stack.pop()
+        else:
+            stack.append(ch)
+    return not stack
+
+print(isvalid("()[]{}"))        
+print(isvalid("(["))        
+
 
 
 
