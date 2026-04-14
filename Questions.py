@@ -412,39 +412,63 @@ nums = [0,1,0,3,12]
 #! 12. min stack
 # Design the stack that support retriving the minimun element in po(1)
 
-class Minstack:
-    def __init__(self):
-        self.stack = []
+# class Minstack:
+#     def __init__(self):
+#         self.stack = []
 
-    def push(self,val):
-        if not self.stack:
-            self.stack.append((val,val))
-        else:
-            current_min  = min(val,self.stack[-1][1])    
-            self.stack.append((val,current_min))
+#     def push(self,val):
+#         if not self.stack:
+#             self.stack.append((val,val))
+#         else:
+#             current_min  = min(val,self.stack[-1][1])    
+#             self.stack.append((val,current_min))
 
-    def pop(self):
-        self.stack.pop()
+#     def pop(self):
+#         self.stack.pop()
 
-    def top(self):
-        return self.stack[-1][0]
+#     def top(self):
+#         return self.stack[-1][0]
     
-    def getmin(self):
-        return self.stack[-1][1]
+#     def getmin(self):
+#         return self.stack[-1][1]
     
-s = Minstack()    
-s.push(5)
-s.push(3)
-s.push(7)
-print(s.stack)
-print(s.top())
-print(s.getmin())
+# s = Minstack()    
+# s.push(5)
+# s.push(3)
+# s.push(7)
+# print(s.stack)
+# print(s.top())
+# print(s.getmin())
 
-s.pop()
-print(s.getmin())
+# s.pop()
+# print(s.getmin())
 
-s.pop()
-print(s.getmin())
+# s.pop()
+# print(s.getmin())
+
+
+#===============================================================
+#! 13. Factorial
+# compute factorial using Recursion & normal 
+
+# normal factorial 
+# n = int(input("Enter a value : "))
+# fact = 1 
+# for i in range(1,n+1):
+#     fact = fact * i 
+# print(fact)    
+
+# Recursion 
+def fact(n):
+    if n == 0:
+         return 1 
+    else:
+        return n * fact(n-1)
+
+n = int(input("Enter value : "))    
+print(fact(n))
+
+
 
 
 
