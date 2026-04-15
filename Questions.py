@@ -459,15 +459,28 @@ nums = [0,1,0,3,12]
 # print(fact)    
 
 # Recursion 
-def fact(n):
-    if n == 0:
-         return 1 
-    else:
-        return n * fact(n-1)
+# def fact(n):
+#     if n == 0:
+#          return 1 
+#     else:
+#         return n * fact(n-1)
 
-n = int(input("Enter value : "))    
-print(fact(n))
+# n = int(input("Enter value : "))    
+# print(fact(n))
 
+
+#===============================================================
+#! 14. Fibonacci number
+# return the n fibonacci number 
+ 
+n = int(input("Enter  a value : "))
+a = 0
+b = 1 
+for i in range(n):
+    temp = a+b
+    a = b
+    b = temp 
+print(a)    
 
 
 
