@@ -473,15 +473,30 @@ nums = [0,1,0,3,12]
 #! 14. Fibonacci number
 # return the n fibonacci number 
  
-n = int(input("Enter  a value : "))
-a = 0
-b = 1 
-for i in range(n):
-    temp = a+b
-    a = b
-    b = temp 
-print(a)    
+# n = int(input("Enter  a value : "))
+# a = 0
+# b = 1 
+# for i in range(n):
+#     temp = a+b
+#     a = b
+#     b = temp 
+# print(a)    
 
+
+#===============================================================
+#! 15. Two pointers 
+# Remove duplicates from sorted array 
+
+nums = [0,0,1,1,2,2,3,3,4]
+
+i = 0
+
+for j in range(1,len(nums)):
+    if nums[j]!=nums[i]:
+        i+=1
+        nums[i] = nums[j]
+print(i+1)        
+print(nums[:i+1])
 
 
 
