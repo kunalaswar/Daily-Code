@@ -487,18 +487,63 @@ nums = [0,1,0,3,12]
 #! 15. Two pointers 
 # Remove duplicates from sorted array 
 
-nums = [0,0,1,1,2,2,3,3,4]
+# nums = [0,0,1,1,2,2,3,3,4]
 
-i = 0
+# i = 0
 
-for j in range(1,len(nums)):
-    if nums[j]!=nums[i]:
-        i+=1
-        nums[i] = nums[j]
-print(i+1)        
-print(nums[:i+1])
+# for j in range(1,len(nums)):
+#     if nums[j]!=nums[i]:
+#         i+=1
+#         nums[i] = nums[j]
+# print(i+1)        
+# print(nums[:i+1])
+
+#===============================================================
+#! 16. squares of a sorted array
+# Return the sorted array of squares
+
+# lst = [-4,-1,0,3,10]
+
+# for i in range(len(lst)):
+#     lst[i] = lst[i]*lst[i]
+
+# lst.sort()
+# print(lst)
+
+# 
+# lst = [-4,-1,0,3,10]
+# n = len(nums)
+# ans = [0]*n
+
+# i = 0
+# j = n-1 
+# k = n-1 
+# while(i<=j):
+#     if abs(nums[i])>abs(nums[i]):
+#         ans[k] = nums[i]* nums[i]
+#         i = i+1 
+#     else:
+#         ans[k] = nums[j]* nums[j]
+#         j = j-1 
+#     k = k-1 
+
+# print(ans) 
 
 
+# 
+def sortedsquares(nums):
+    left , right = 0, len(nums)-1
+    res = []
+
+    while left <= right :
+        if nums[left] * nums[left] > nums[right]*nums[right]:
+            res.append(nums[left]*nums[left])
+            left += 1    
+        else:
+            res.append(nums[right]*nums[right])    
+            right -=1   
+    return res[::-1]  
+print(sortedsquares([-4,-1,0,3,10]))    
 
 
 
