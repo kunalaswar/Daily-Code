@@ -8,11 +8,11 @@
 # s = ["h","e","l","l","o"]
 # # print(s[::-1])
 
-# left = 0 
+# left = 0
 # right = len(s)-1
 # while(left < right):
 #     s[left],s[right] = s[right] ,s[left ]
-#     left += 1 
+#     left += 1
 #     right -= 1
 # print(s)
 
@@ -29,17 +29,17 @@
 # right = len(s)-1
 # # print(left , right)
 # while(left<right):
-#     # "Keep skipping until character becomes valid." that why we use the while 
+#     # "Keep skipping until character becomes valid." that why we use the while
 #     while left <right and not s[left].isalnum(): # amanaplanacanalpanama
 #         left += 1
 #     while left < right and not s[right].isalnum():
-#         right -= 1 
+#         right -= 1
 #     if s[left].lower() !=  s[right].lower():
 #         print(False)
-#         break 
+#         break
 
-#     left += 1 
-#     right -= 1 
+#     left += 1
+#     right -= 1
 # else:
 #     print(True)
 
@@ -51,18 +51,18 @@
 # Example:
 # "leetcode" → 0
 
-# s = "leetcode"   
+# s = "leetcode"
 # count  = {}
 # for ch in s:
 #     if ch in count:
-#         count[ch] += 1   
+#         count[ch] += 1
 #     else:
 #         count[ch] = 1
 
-# # find first non -repeating 
+# # find first non -repeating
 # for i in range(len(s)):
 #     if count[s[i]] ==1 :
-#         print(i) 
+#         print(i)
 #         break
 
 # ----------------------------------------------------------
@@ -80,7 +80,7 @@
 #         count[ch] +=1
 #     else:
 #         count[ch] = 1
-# # print(count)   
+# # print(count)
 # for i in range(len(s)):
 #     if count[s[i]]==1:
 #         print(i)
@@ -97,17 +97,17 @@
 # count = {}
 # for i in nums:
 #     if i in count:
-#         count[i] +=1 
+#         count[i] +=1
 #     else:
-#         count[i] = 1 
-# print(count)        
+#         count[i] = 1
+# print(count)
 
 # for val in count:
 #     if count[val]==2:
 #         print(True)
 #         break
 #     else:
-#         print(False)    
+#         print(False)
 #         break
 # =============================================================
 
@@ -119,8 +119,8 @@
 # Example:
 # [0,1,0,3,12] → [1,3,12,0,0]
 
-nums = [0,1,0,3,12]    
-# pos = 0 # 1 
+nums = [0, 1, 0, 3, 12]
+# pos = 0 # 1
 # for i  in range(len(nums)): # [1,1,0,3,12]
 #     if nums[i] != 0:
 #         nums[pos] = nums[i]
@@ -128,14 +128,14 @@ nums = [0,1,0,3,12]
 #     print(nums)
 # for i in range(pos,len(nums)):
 #     nums[i] = 0
-# print(nums)    
+# print(nums)
 
-#! method 2 
+#! method 2
 # temp = []
 # for i in range(0,len(nums)):
 #     if nums[i]!=0:
 #         temp.append(nums[i])
-# # nz= len(temp)        
+# # nz= len(temp)
 # for i in range(0,len(temp)):
 #     nums[i] = temp[i]
 
@@ -145,20 +145,20 @@ nums = [0,1,0,3,12]
 # print(nums)
 
 #! method 3
-# nums = [0,1,0,3,12]    
+# nums = [0,1,0,3,12]
 # i =0
 # while(i<len(nums)):
 #     if nums[i]==0:
 #         break
-#     i = i+1 
-# if i==len(nums): 
-#     pass # return 
-# j = i+1 
+#     i = i+1
+# if i==len(nums):
+#     pass # return
+# j = i+1
 # while(j<len(nums)):
 #     if nums[j]!=0:
 #         nums[i],nums[j] = nums[j],nums[i]
 #         i = i+1
-#     j = j+1     
+#     j = j+1
 # print(nums)
 
 
@@ -176,20 +176,20 @@ nums = [0,1,0,3,12]
 #         count1[s[i]] = 1
 #     else:
 #         count1[s[i]] += 1
-# print(count1)        
+# print(count1)
 # for i in range(len(t)):
 #     if t[i] not in count2:
 #         count2[t[i]] = 1
 #     else:
 #         count2[t[i]] += 1
-# print(count2)        
+# print(count2)
 
 # if count1 != count2: # Order does NOT matter in dictionary comparison.
 #     print(False)
 
 # else:
-#     print(True)    
-        
+#     print(True)
+
 #! method 2
 # s = "anagram"
 # t = "nagaram"
@@ -200,7 +200,7 @@ nums = [0,1,0,3,12]
 
 # else:
 #     count = {}
-    
+
 #     for ch in s:
 #         count[ch] = count.get(ch,0) + 1
 
@@ -213,11 +213,11 @@ nums = [0,1,0,3,12]
 #         if count[ch] < 0:
 #             print(False)
 #             break
-    
+
 #     else:
 #         print(True)
 
-#===============================================================
+# ===============================================================
 #! 5. Longest Common Prefix
 # Find the longest common prefix among an array of strings.
 # Example:
@@ -244,35 +244,35 @@ nums = [0,1,0,3,12]
 # for s in strs[1:]:
 #     # print(s)
 #     while not s.startswith(prefix):
-#         prefix = prefix[:-1] # reduce the lenght 
+#         prefix = prefix[:-1] # reduce the lenght
 #         if not prefix:
 #             break
-# print(prefix)        
+# print(prefix)
 
 
-#===============================================================
-#! 6. Best time to buy and sell the stock 
+# ===============================================================
+#! 6. Best time to buy and sell the stock
 # Return maximun profit from one buy and one sell
 
 # lst = [7,1,5,3,6,4]
 # min_price = lst[0]
-# max_profit = 0     
+# max_profit = 0
 
 # for i in lst:
 #     if i < min_price:
 #         min_price = i # 1
-# # # print(min_price)      
-#     profit = i-min_price 
-#     # print(profit)  
+# # # print(min_price)
+#     profit = i-min_price
+#     # print(profit)
 #     if profit > max_profit:
 #         max_profit = profit
 
-# print("profit : ",max_profit)         
+# print("profit : ",max_profit)
 
 
-#===============================================================
-#! 7. merge sorted array 
-#  Marge two sorted arrays into one sorted array in place 
+# ===============================================================
+#! 7. merge sorted array
+#  Marge two sorted arrays into one sorted array in place
 
 # a = [1,2,3,0,0,0]
 # b = [2,5,6]
@@ -289,18 +289,18 @@ nums = [0,1,0,3,12]
 #     else:
 #         a[k]=b[j]
 #         j = j-1
-#     k = k - 1 
+#     k = k - 1
 
 # while(j>=0):
 #     a[k] = b[j]
 #     j = j-1
 #     k = k-1
-# print(a)   
+# print(a)
 
- 
-#===============================================================
-#! 8. majority element 
-# find the element that appear more than n/2 times 
+
+# ===============================================================
+#! 8. majority element
+# find the element that appear more than n/2 times
 
 # lst = [3,2,3]
 # count = {}
@@ -308,26 +308,26 @@ nums = [0,1,0,3,12]
 #     if i not in count:
 #         count[i] = 1
 #     else:
-#         count[i] += 1 
-# # print(count)        
+#         count[i] += 1
+# # print(count)
 # for val in count:
 #     if count[val] > 3:
 #         print(val)
 
 
-# boyers more voting 
+# boyers more voting
 # lst = [3,2,3]
 # candidate = None
 # count = 0
 # for num in lst:
 #     if count ==0:
-#         candidate = num 
-#     count +=1 if num == candidate  else -1 
+#         candidate = num
+#     count +=1 if num == candidate  else -1
 # print(candidate)
 
-#===============================================================
-#! 9. Intersection of two Array 
-# Return the intersection of two arrays continue elements 
+# ===============================================================
+#! 9. Intersection of two Array
+# Return the intersection of two arrays continue elements
 # Eaxmples
 
 # lst1 = [1,2,2,1]
@@ -336,9 +336,9 @@ nums = [0,1,0,3,12]
 # for i in lst1:
 #     if i in lst2:
 #         common_element.add(i)
-# print(common_element)   
+# print(common_element)
 
-# 
+#
 # lst1 = [1,2,2,1]
 # lst2 = [2,2]
 # set2 = set(lst2)
@@ -346,39 +346,39 @@ nums = [0,1,0,3,12]
 # for i in lst1:
 #     if i in set2:
 #         common_element.add(i)
-# print(common_element)        
+# print(common_element)
 
 
-#===============================================================
-#! 10.Top k Frequent Elements 
-# Return  the k most frequent elements 
+# ===============================================================
+#! 10.Top k Frequent Elements
+# Return  the k most frequent elements
 # Example :
 
 # nums = [1,1,1,2,2,3]
-# k = 2 
+# k = 2
 # dict1 = {}
 # for i in nums:
 #     if i not in dict1:
-#         dict1[i] = 1 
+#         dict1[i] = 1
 #     else:
-#         dict1[i] += 1 
-# # print(dict1)  
+#         dict1[i] += 1
+# # print(dict1)
 # sorted_item = sorted(dict1.items(),  key=lambda x : x[1], reverse = True)
 
-# result = [key for key in sorted_item[:k]]   
-# print(result) 
-        
-#===============================================================
+# result = [key for key in sorted_item[:k]]
+# print(result)
+
+# ===============================================================
 # stack
 #! 11. valid paranthesis
-# check if paranthesis are valid 
+# check if paranthesis are valid
 # Example :
 # "(),[],{}" = True
 
 # def isvalid(s):
-        
+
 #     stack = []
-#     pairs = {')':'(', ']':'[', '}':'{'} 
+#     pairs = {')':'(', ']':'[', '}':'{'}
 #     for ch in s:
 #         if ch in pairs.values():
 #             stack.append(ch)
@@ -388,13 +388,13 @@ nums = [0,1,0,3,12]
 #             if stack[-1] !=pairs[ch]:
 #                 return False
 #             stack.pop()
-#     return len(stack)== 0 
+#     return len(stack)== 0
 # print(isvalid("()[]{}"))
 
 #
 # def isvalid(s):
 #     stack = []
-#     closetoopen = {')':'(', ']':'[', '}':'{'} 
+#     closetoopen = {')':'(', ']':'[', '}':'{'}
 #     for ch in s:
 #         if ch in closetoopen:
 #             if not stack or stack[-1] != closetoopen[ch]:
@@ -404,11 +404,11 @@ nums = [0,1,0,3,12]
 #             stack.append(ch)
 #     return not stack
 
-# print(isvalid("()[]{}"))        
-# print(isvalid("(["))        
+# print(isvalid("()[]{}"))
+# print(isvalid("(["))
 
 
-#===============================================================
+# ===============================================================
 #! 12. min stack
 # Design the stack that support retriving the minimun element in po(1)
 
@@ -420,7 +420,7 @@ nums = [0,1,0,3,12]
 #         if not self.stack:
 #             self.stack.append((val,val))
 #         else:
-#             current_min  = min(val,self.stack[-1][1])    
+#             current_min  = min(val,self.stack[-1][1])
 #             self.stack.append((val,current_min))
 
 #     def pop(self):
@@ -428,11 +428,11 @@ nums = [0,1,0,3,12]
 
 #     def top(self):
 #         return self.stack[-1][0]
-    
+
 #     def getmin(self):
 #         return self.stack[-1][1]
-    
-# s = Minstack()    
+
+# s = Minstack()
 # s.push(5)
 # s.push(3)
 # s.push(7)
@@ -447,45 +447,45 @@ nums = [0,1,0,3,12]
 # print(s.getmin())
 
 
-#===============================================================
+# ===============================================================
 #! 13. Factorial
-# compute factorial using Recursion & normal 
+# compute factorial using Recursion & normal
 
-# normal factorial 
+# normal factorial
 # n = int(input("Enter a value : "))
-# fact = 1 
+# fact = 1
 # for i in range(1,n+1):
-#     fact = fact * i 
-# print(fact)    
+#     fact = fact * i
+# print(fact)
 
-# Recursion 
+# Recursion
 # def fact(n):
 #     if n == 0:
-#          return 1 
+#          return 1
 #     else:
 #         return n * fact(n-1)
 
-# n = int(input("Enter value : "))    
+# n = int(input("Enter value : "))
 # print(fact(n))
 
 
-#===============================================================
+# ===============================================================
 #! 14. Fibonacci number
-# return the n fibonacci number 
- 
+# return the n fibonacci number
+
 # n = int(input("Enter  a value : "))
 # a = 0
-# b = 1 
+# b = 1
 # for i in range(n):
 #     temp = a+b
 #     a = b
-#     b = temp 
-# print(a)    
+#     b = temp
+# print(a)
 
 
-#===============================================================
-#! 15. Two pointers 
-# Remove duplicates from sorted array 
+# ===============================================================
+#! 15. Two pointers
+# Remove duplicates from sorted array
 
 # nums = [0,0,1,1,2,2,3,3,4]
 
@@ -495,10 +495,10 @@ nums = [0,1,0,3,12]
 #     if nums[j]!=nums[i]:
 #         i+=1
 #         nums[i] = nums[j]
-# print(i+1)        
+# print(i+1)
 # print(nums[:i+1])
 
-#===============================================================
+# ===============================================================
 #! 16. squares of a sorted array
 # Return the sorted array of squares
 
@@ -510,53 +510,70 @@ nums = [0,1,0,3,12]
 # lst.sort()
 # print(lst)
 
-# 
+#
 # lst = [-4,-1,0,3,10]
 # n = len(nums)
 # ans = [0]*n
 
 # i = 0
-# j = n-1 
-# k = n-1 
+# j = n-1
+# k = n-1
 # while(i<=j):
 #     if abs(nums[i])>abs(nums[i]):
 #         ans[k] = nums[i]* nums[i]
-#         i = i+1 
+#         i = i+1
 #     else:
 #         ans[k] = nums[j]* nums[j]
-#         j = j-1 
-#     k = k-1 
+#         j = j-1
+#     k = k-1
 
-# print(ans) 
-
-
-# 
-def sortedsquares(nums):
-    left , right = 0, len(nums)-1
-    res = []
-
-    while left <= right :
-        if nums[left] * nums[left] > nums[right]*nums[right]:
-            res.append(nums[left]*nums[left])
-            left += 1    
-        else:
-            res.append(nums[right]*nums[right])    
-            right -=1   
-    return res[::-1]  
-print(sortedsquares([-4,-1,0,3,10]))    
+# print(ans)
 
 
+#
+# def sortedsquares(nums):
+#     left , right = 0, len(nums)-1
+#     res = []
 
- 
+#     while left <= right :
+#         if nums[left] * nums[left] > nums[right]*nums[right]:
+#             res.append(nums[left]*nums[left])
+#             left += 1
+#         else:
+#             res.append(nums[right]*nums[right])
+#             right -=1
+#     return res[::-1]
+# print(sortedsquares([-4,-1,0,3,10]))
 
 
+# ===============================================================
+#! 17.  subarray num Equals k
+# count subarray whose sum equals to k brute force approach
+
+# def subarray(nums,k):
+#     sums = 0
+#     lst = []
+#     for i in nums:
+#         lst.append(i)
+#         nums += lst
+
+# nums = [1,1,1]
+# k = 2
+# print(subarray(nums,k))
 
 
+nums = [1, 1, 1]
+k = 2
+count = 0
 
-
-    
-
-    
-
-
+for i in range(len(nums)):
+    # print(nums[i])   
+    sum = 0   
+    for j in range(i,len(nums)):
+        print(j)
+        sum +=nums[j]
+        print("-------")
+        if sum == k:
+            count += 1
+print(count,"===")            
 
