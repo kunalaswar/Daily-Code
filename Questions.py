@@ -577,3 +577,28 @@ for i in range(len(nums)):
             count += 1
 print(count,"===")            
 
+# ===============================================================
+#! 18.  Group Anagram
+# Group string that are anagrams 
+
+# Anagram : Two strings are anagram if
+#           they contain the same letter 
+#           with same frequency
+#           but the order can be different 
+
+# eat , ate , tea -> anagram 
+
+from collections import defaultdict 
+class Solution:
+    def groupAnagram(self,strs):
+        groups = defaultdict(list)
+
+        for s in strs :
+            key = ''.join(sorted(s))
+            groups[key].append(s)
+        return list(groups.values())    
+
+s = Solution()    
+print(s.groupAnagram(["eat","tea","tan","ate","nat","bat"]))
+
+
