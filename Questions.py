@@ -562,20 +562,20 @@ nums = [0, 1, 0, 3, 12]
 # print(subarray(nums,k))
 
 
-nums = [1, 1, 1]
-k = 2
-count = 0
+# nums = [1, 1, 1]
+# k = 2
+# count = 0
 
-for i in range(len(nums)):
-    # print(nums[i])   
-    sum = 0   
-    for j in range(i,len(nums)):
-        print(j)
-        sum +=nums[j]
-        print("-------")
-        if sum == k:
-            count += 1
-print(count,"===")            
+# for i in range(len(nums)):
+#     # print(nums[i])   
+#     sum = 0   
+#     for j in range(i,len(nums)):
+#         print(j)
+#         sum +=nums[j]
+#         print("-------")
+#         if sum == k:
+#             count += 1
+# print(count,"===")            
 
 # ===============================================================
 #! 18.  Group Anagram
@@ -588,17 +588,52 @@ print(count,"===")
 
 # eat , ate , tea -> anagram 
 
-from collections import defaultdict 
-class Solution:
-    def groupAnagram(self,strs):
-        groups = defaultdict(list)
+# from collections import defaultdict 
+# class Solution:
+#     def groupAnagram(self,strs):
+#         groups = defaultdict(list)
 
-        for s in strs :
-            key = ''.join(sorted(s))
-            groups[key].append(s)
-        return list(groups.values())    
+#         for s in strs :
+#             key = ''.join(sorted(s))
+#             groups[key].append(s)
+#         return list(groups.values())    
 
-s = Solution()    
-print(s.groupAnagram(["eat","tea","tan","ate","nat","bat"]))
+# s = Solution()    
+# print(s.groupAnagram(["eat","tea","tan","ate","nat","bat"]))
 
+
+# ===============================================================
+#! 19.product of array except self
+# Return array where each element is product of all other 
+# nums = [1,2,3,4]
+# op = [24,12,8,6]
+
+# nums = [1,2,3,4]
+# n = len(nums)
+# ans = [1]*n
+# prefix = 1 
+# for i in range(n):
+#     ans[i] =prefix 
+#     prefix *=nums[i]
+
+# suffix = 1 
+# for i in range(len(nums)-1,-1,-1):
+#     ans[i] *= suffix
+#     suffix *= nums[i]
+
+# print(ans)
+#
+nums = [1,2,3,4]
+lst  = [] 
+
+for i in range(len(nums)):
+    product = 1         
+    # print(i)
+    for j in range(len(nums)):
+        if i!=j:   
+            product *= nums[j]
+
+    lst.append(product)    
+print(lst)
+        
 
