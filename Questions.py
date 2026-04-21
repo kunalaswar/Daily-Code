@@ -632,7 +632,8 @@ for i in range(len(nums)):
     for j in range(len(nums)):
         if i!=j:   
             product *= nums[j]
-
+            # print(product)
+            # print("------")
     lst.append(product)    
 print(lst)
         
