@@ -20,8 +20,7 @@ def search( arr, x):
     return -1    
 
 
-
-
 print(search([1, 2, 3, 4], x = 3))  
 print(search([10, 8, 30, 4, 5], x = 5))  
 print(search([10, 8, 30], x = 6))  
+
