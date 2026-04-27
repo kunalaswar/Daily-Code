@@ -623,18 +623,42 @@ nums = [0, 1, 0, 3, 12]
 
 # print(ans)
 #
-nums = [1,2,3,4]
-lst  = [] 
+# nums = [1,2,3,4]
+# lst  = [] 
 
-for i in range(len(nums)):
-    product = 1         
-    # print(i)
-    for j in range(len(nums)):
-        if i!=j:   
-            product *= nums[j]
-            # print(product)
-            # print("------")
-    lst.append(product)    
-print(lst)
+# for i in range(len(nums)):
+#     product = 1         
+#     # print(i)
+#     for j in range(len(nums)):
+#         if i!=j:   
+#             product *= nums[j]
+#             # print(product)
+#             # print("------")
+#     lst.append(product)    
+# print(lst)
         
+
+# ===============================================================
+#! 20.Count the Zeros
+
+#Given an array arr of only 0's and 1's. The array is sorted in such a manner that all the 1's are placed first and then they are followed by all the 0's. Find the count of all the 0's.
+
+# Input: arr[] = [1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0]
+# Output: 3
+# Explanation: There are 3 0's in the given array.
+# Input: arr[] = [0, 0, 0, 0, 0]
+# Output: 5
+# Explanation: There are 5 0's in the array.
+
+def countZeroes(arr):
+    count = 0
+    for num in arr:
+        if num==0:
+            count = count + 1 
+    print(count)        
+
+
+
+countZeroes([1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0])
+countZeroes([0, 0, 0, 0, 0])
 
