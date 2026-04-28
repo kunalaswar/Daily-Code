@@ -650,15 +650,40 @@ nums = [0, 1, 0, 3, 12]
 # Output: 5
 # Explanation: There are 5 0's in the array.
 
-def countZeroes(arr):
-    count = 0
-    for num in arr:
-        if num==0:
-            count = count + 1 
-    print(count)        
+# def countZeroes(arr):
+#     count = 0
+#     for num in arr:
+#         if num==0:
+#             count = count + 1 
+#     print(count)        
 
 
 
-countZeroes([1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0])
-countZeroes([0, 0, 0, 0, 0])
+# countZeroes([1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0])
+# countZeroes([0, 0, 0, 0, 0])
+
+# ===============================================================
+#! 21.Move Even to Front
+
+# Move all even numbers to front Keep order same
+# Example
+# Input:
+# [1,2,3,4,5,6]
+# Output:
+# [2,4,6,1,3,5]
+
+
+
+arr = [1,2,3,4,5,6]
+evn = []
+odd =[]
+for i in arr :
+    if i%2==0:
+        evn.append(i)
+    else:
+        odd.append(i)    
+
+print(evn + odd)            
+
+
 
