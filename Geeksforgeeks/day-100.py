@@ -10,11 +10,11 @@
 # Output: [1, 2, 3, 50]
 # Explanation: After inserting 50 at the end, we have array elements as 1 2 3 50.
 
-def insertAtEnd(arr, val):
-    arr[len(arr):] = [val]
-    return arr
+# def insertAtEnd(arr, val):
+#     arr[len(arr):] = [val]
+#     return arr
 
-print(insertAtEnd([1, 2, 3, 4, 5], val = 90))   
+# print(insertAtEnd([1, 2, 3, 4, 5], val = 90))   
 
 # 
 def insertAtEnd(arr, val):
