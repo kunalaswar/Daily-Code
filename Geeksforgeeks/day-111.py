@@ -21,7 +21,7 @@ def totalCount(k, arr):
 
     return total    
 
-
 print(totalCount(k = 3, arr = [5, 8, 10, 13]))
+
 
     
