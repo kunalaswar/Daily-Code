@@ -4,7 +4,6 @@
 # Note: The modulo operation finds the remainder after the division of one number by another. For example, k(mod(m))=k%m= remainder obtained when k is divided by m
 
 # Examples:
-
 # Input: arr[] = [1, 2, 3, 4]
 # Output: 24
 # Explanation: The product of the elements in the array is 1×2×3×4=24. Since 24 is less than 1000000007, the output is simply 24.
@@ -17,11 +16,8 @@ class Solution:
     def product(self, arr):
 
         mul = 1
-
         for i in arr:
-
             mul = mul * i
-
         return mul % 1000000007  
 
 s = Solution()        
