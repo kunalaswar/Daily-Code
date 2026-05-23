@@ -14,7 +14,7 @@
 # Input: arr = [7, 8, 6], key = 2
 # Output: [-1, -1]
 # Explanation: Since 2 does not appear in the array, we will return -1 for both the start and end indices.
-
+ # 
 def findIndex (arr, key):
     start = -1
     end = -1
