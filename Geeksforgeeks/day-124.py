@@ -35,10 +35,9 @@
 # print(thirdLargest([2, 4, 1, 3, 5]))
 # print(thirdLargest([10, 2]))
 
-# 
 
+#
 def thirdLargest(arr):
-        # code here
     firstmax = -1
     secmax = -1
     thirdmax = -1
