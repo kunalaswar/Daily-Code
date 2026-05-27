@@ -47,13 +47,11 @@ def thirdLargest(arr):
         if i >= firstmax:    
             thirdmax = secmax    
             secmax = firstmax    
-            firstmax = i
-    
+            firstmax = i    
         # new second maximum
         elif i >= secmax:    
             thirdmax = secmax    
-            secmax = i
-    
+            secmax = i    
         # new third maximum
         elif i >= thirdmax:    
             thirdmax = i
