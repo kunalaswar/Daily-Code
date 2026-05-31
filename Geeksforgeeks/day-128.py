@@ -26,8 +26,7 @@ def isRotated(s1, s2):
         # anti-clockwise rotation by 2
     anticlockwise = s1[2:] + s1[:2]
 
-    return s2 == clockwise or s2 == anticlockwise
-    
+    return s2 == clockwise or s2 == anticlockwise    
 print(isRotated("amazon", s2 = "azonam"))    
 print(isRotated("geeksforgeeks", s2 = "geeksgeeksfor"))    
 print(isRotated("ab", s2 = "ab"))    
