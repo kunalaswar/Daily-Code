@@ -13,20 +13,13 @@
 # Explanation: There are no contiguous increasing heights
 
 def maxStep(arr):
-
     count = 0
     maximum = 0
-
     for i in range(1, len(arr)):
-
         if arr[i] > arr[i-1]:
-
             count += 1
-
             maximum = max(maximum, count)
-
         else:
-
             count = 0
 
     return maximum
