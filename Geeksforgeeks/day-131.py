@@ -30,3 +30,4 @@ def makeBeautiful(arr):
     return stack
 print(makeBeautiful([4, 2,-2, 1]))
 print(makeBeautiful([2,-2, -1, 1]))
+
