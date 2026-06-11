@@ -18,7 +18,7 @@
 
 
 
-# 
+
 def makeBeautiful(arr):
     stack = []
     for num in arr:
