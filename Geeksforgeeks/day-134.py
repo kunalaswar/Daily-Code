@@ -15,12 +15,10 @@ def minProductSum(a,b):
     b.sort(reverse=True)
 
     total = 0
-
     for i in range(len(a)):
         total += a[i] * b[i]
 
     return total
-
 
 print(minProductSum([3, 1, 1],[6, 5, 4]))
 print(minProductSum([6, 1, 9, 5, 4],[3, 4, 8, 2, 4]))
