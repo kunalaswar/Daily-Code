@@ -1,0 +1,30 @@
+# Check if an Array is Max Heap
+# Given an array arr[], determine whether it represents the level-order traversal of a valid max heap. Return true if it does; otherwise, return false.
+
+# Examples :
+# Input: arr[] = [90, 15, 10, 7, 12, 2]
+# Output: true
+# Explanation: The given array represents the following tree. Each parent node is greater than or equal to its children, so the max-heap property holds. 
+# Input: arr[] = [9, 15, 10, 7, 12, 11]
+# Output: false
+# Explanation: The given array represents the following tree. It does not satisfy the max-heap property, as 9 is smaller than 15 and 10, and 10 is smaller than 11.
+#* Arrays
+#* Heap properties
+#* Index formulas 
+
+def isMaxHeap(arr):
+    n = len(arr)
+    for i in range(n // 2):
+
+        left = 2 * i + 1
+        right = 2 * i + 2
+        if left < n and arr[i] < arr[left]:
+            return False
+
+        if right < n and arr[i] < arr[right]:
+            return False
+
+    return True
+
+print(isMaxHeap([90, 15, 10, 7, 12, 2]))
+print(isMaxHeap([9, 15, 10, 7, 12, 11]))

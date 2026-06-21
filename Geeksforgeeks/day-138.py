@@ -37,7 +37,7 @@ def findClosestPair(arr1, arr2, x):
         diff = abs(x - curr_sum)
 
         if diff < min_diff:
-
+            
             min_diff = diff
             ans = [arr1[i], arr2[j]]
 
