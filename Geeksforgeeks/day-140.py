@@ -25,7 +25,6 @@ def totalFine( date, car, fine):
 
             # Odd date → even cars pay fine
         else:
-
             if car[i] % 2 == 0:
                 total += fine[i]
 
