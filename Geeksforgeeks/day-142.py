@@ -9,7 +9,7 @@
 # Output: 2
 # Explanation : Lowest occurring element (2) occurs once. Highest occurring element (7) occurs 3 times
 
-
+#
 def findDiff(arr):
     freq = {}
 
