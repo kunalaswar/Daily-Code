@@ -14,13 +14,13 @@
 # Output: true
 # Explanation: 8 is repeated at distance 3.
 
-#
+
 class Solution:
     def checkDuplicatesWithinK(self, arr, k):
         last_index = {}
         for i in range(len(arr)):
             if arr[i] in last_index:
-                if i - last_index[arr[i]] <= k:
+                if i - last_index[arr[i]] <= k:   
                     return True
             last_index[arr[i]] = i
         return False
