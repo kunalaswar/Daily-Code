@@ -15,19 +15,18 @@
 # Explanation: 8 is repeated at distance 3.
 
 
-class Solution:
-    def checkDuplicatesWithinK(self, arr, k):
-        last_index = {}
-        for i in range(len(arr)):
-            if arr[i] in last_index:
-                if i - last_index[arr[i]] <= k:   
-                    return True
-            last_index[arr[i]] = i
-        return False
+def checkDuplicatesWithinK(arr, k):
+    last_index = {}
+    for i in range(len(arr)):
+        if arr[i] in last_index:
+            if i - last_index[arr[i]] <= k:   
+                return True
+        last_index[arr[i]] = i
+    return False
 
-s = Solution()
-print(s.checkDuplicatesWithinK([1, 5, 4, 5, 1], k = 3))
-print(s.checkDuplicatesWithinK([10, 2, 3, 4, 10, 5], k = 3))
-print(s.checkDuplicatesWithinK([6, 8, 4, 1, 8, 5, 7], k = 3))
+
+print(checkDuplicatesWithinK([1, 5, 4, 5, 1], k = 3))
+print(checkDuplicatesWithinK([10, 2, 3, 4, 10, 5], k = 3))
+print(checkDuplicatesWithinK([6, 8, 4, 1, 8, 5, 7], k = 3))
 
       
