@@ -3,7 +3,6 @@
 # Given an array, arr[] of positive integers. Your task is to return the product of array elements under the given modulo, mod with the value of 1000000007.
 
 # Note: The modulo operation finds the remainder after the division of one by another. For example, k(mod(m)) = k%m = remainder obtained when k is divided by m
-
 # Examples:
 # Input: arr[] = [1, 2, 3, 4]
 # Output: 24
