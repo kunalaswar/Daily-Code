@@ -12,8 +12,8 @@
 # Output: 993000007
 # Explanation:  The product of the array elements is 100000 × 100000 × 100000 = 1000000000000000. Taking modulo 1000000007, the result is 1000000000000000 % 1000000007 = 993000007
 
-def product(arr):
-      
+#
+def product(arr):      
     MOD = 1000000007
     result = 1
 
