@@ -16,7 +16,6 @@
 def product(arr):      
     MOD = 1000000007
     result = 1
-
     for num in arr:
         result = (result * num) % MOD
     return result
