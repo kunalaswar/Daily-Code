@@ -14,5 +14,6 @@ def maxDays(arr):
             if x > ans:
                 ans = x
         return ans
+
 print(maxDays([1, 1, 2] ))
 print(maxDays([2, 3, 4, 2, 1] ))
