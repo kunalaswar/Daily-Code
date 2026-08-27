@@ -8,6 +8,7 @@
 # Output: 4
 
 ###
+###
 def maxDays(arr):
         ans = 0
         for x in arr:
