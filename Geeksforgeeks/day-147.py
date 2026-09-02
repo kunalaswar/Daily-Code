@@ -7,7 +7,7 @@
 # Input: arr = (1, 2, 3, 4, 5)
 # Output: True
 
-###
+
 arr = (1, 2, 3, 4, 5)
 # arr = (1, 2, 3, 4, 5, 4)
 print(len(arr) == len(set(arr)))
