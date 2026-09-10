@@ -9,7 +9,7 @@
 # Output: 5 4 3 2 1 0
 # Explanation: Numbers in decreasing order from 5 are 5 4 3 2 1 0.
 
-###
+
 x = int(input("Enter number here : "))
 while x >= 0:
     print(x, end=" ")
