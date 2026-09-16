@@ -47,7 +47,6 @@
 
 # input = [1,2,3,4,5]
 # output = [2,5,12,20]
-
 arr =  [1,2,3,4,5]
 lst = []
 for i in range(len(arr)-1):
