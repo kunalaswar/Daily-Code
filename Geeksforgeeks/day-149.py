@@ -21,7 +21,7 @@ import math
 # f to store float
 # ff  # To Store floor of float variable f
 
-###
+
 import math
 s = input()
 n = int(input())
