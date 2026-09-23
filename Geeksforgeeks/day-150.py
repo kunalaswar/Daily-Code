@@ -12,6 +12,7 @@
 # Output: greater
 # Explanation: 8 > 4 so print 'greater'
 
+###
 
 n = int(input())
 m = int(input())
