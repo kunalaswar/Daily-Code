@@ -10,7 +10,8 @@
 # Output: 7 6 
 # Explanation: Initially a = 6 and b = 7, now a = 7 and b = 6.
 
-###
+######
+
 a = int(input())
 b = int(input())
 
