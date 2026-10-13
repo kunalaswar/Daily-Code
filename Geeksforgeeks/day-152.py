@@ -9,7 +9,7 @@
 # Input: n = 9768
 # Output: 8
 
-###
+
 
 n = int(input())
 
