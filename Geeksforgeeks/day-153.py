@@ -24,7 +24,7 @@
 # Output: 7 -1 12 0.750 0 3
 # Explanation: The given operations are performed.
 
-###
+
 
 x = int(input())
 y = int(input())
