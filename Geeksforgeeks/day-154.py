@@ -9,7 +9,7 @@
 # Input: n = 1
 # Output: One
 
-#
+
 
 n = int(input())
 
